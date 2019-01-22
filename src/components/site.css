@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+body {
+  font-family: 'Dosis', 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+  background-color: #f1f1f1;
+  font-size: 18px;
+}
+
+a { color: #333; }
+a:hover { color: #000; }
+
+.container {
+  margin: 3rem auto;
+  max-width: 992px;
+  box-shadow: 0 0 10px 0px #ddd;
+  background-color: #fff;
+  border-radius: .5rem;
+}
+
+.container-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1.5rem .5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-header h1 {
+  margin: 0 0 .5rem 0;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem .5rem;
+  border-bottom: 1px solid #ddd;
+}
+.container-nav > a {
+  text-decoration: none;
+  margin: .5rem 1rem;
+}
+
+.container-donut {
+  background-color: #fff;
+  min-height: 100px;
+  overflow: auto;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+.container-body { padding: 0 1.5rem 3rem; }
+
+.container-body > div {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.flex-grow-1 { flex-grow: 1; }
+.flex-start { align-items: stretch; }
+.flex-column { flex-direction: column; }
+.w-100 { width: 100%; }
+.big { font-size: 1.5em; }
+
+@media (max-width: 768px) {
+  .container { margin: 0 auto; }
+  .container-header { font-size: 1.125rem; }
+}
+@media (max-width: 850px) {
+  .donut-sections .control-group { flex-direction: column; }
+}
+@media (min-width: 768px) and (min-height: 500px) {
+  .container-donut {
+    position: sticky;
+    top: 0;
+    max-height: 320px;
+  }
+}
