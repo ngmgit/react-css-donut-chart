@@ -1,34 +1,17 @@
 {
+    "extends": "./tsconfig.json",
     "compilerOptions": {
-      "baseUrl": ".",
-      "outDir": "lib",
-      "module": "esnext",
-      "target": "es5",
-      "lib": ["es6", "dom"],
-      "sourceMap": true,
-      "allowJs": true,
-      "jsx": "react",
-      "moduleResolution": "node",
-      "rootDir": "src/lib",
-      "forceConsistentCasingInFileNames": true,
-      "noImplicitReturns": true,
-      "noImplicitThis": true,
-      "noImplicitAny": true,
-      "importHelpers": true,
-      "strictNullChecks": true,
-      "suppressImplicitAnyIndexErrors": true,
-      "noUnusedLocals": false
+      "outDir": "dist",
+      "rootDir": "lib",
     },
     "exclude": [
       "node_modules",
       "build",
-      "lib",
+      "dist",
       "scripts",
       "acceptance-tests",
       "webpack",
       "jest",
-      "src/**/*",
-      "!src/lib/**/*",
-      "src/setupTests.ts"
+      "src",
     ]
   }
